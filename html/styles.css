@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
+.alegreya-elements {
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0 auto;
+    font-family: 'Alegreya', serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FCF1E8;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 2;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 0 0 60px;
+}
+
+.div-logo img {
+    width: 80px;
+}
+
+.div-sociais {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 60px 0 0;
+}
+
+.div-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+.div-sociais img:hover {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+}
+
+#top-div {
+    width: 100%;
+    height: 85vh;
+    background-color: #FCF1E8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#top-subdiv {
+    width: 40%;
+    gap: 20px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#top-subdiv h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    width: 150px;
+    margin: 0;
+}
+
+#top-subdiv p {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+#top-subdiv button {
+    width: 100px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #df7c7c;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+}
+
+#top-div img {
+    width: 40%;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('imgs/fundo2.jpg') center/cover no-repeat;
+    z-index: 0;
+}
+
+#background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(247, 134, 228, 0.5);
+}
+
+#second-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#second-div section {
+    width: 50%;
+    height: 30%;
+}
+
+#second-div-article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#second-div-article h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+#second-div-article p {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#packages-div {
+    width: 100%;
+    height: 150vh;
+    background-color: #FCF1E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#packages-div h1 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#packages {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.package-block {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.package-block img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.package-block h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#mid-div {
+    width: 100%;
+    height: 175vh;
+    background-color: #F9B1AE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top-mid-subdiv {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#top-mid-subdiv img {
+    width: 10%;
+    margin: 0;
+}
+
+#top-mid-subdiv h4 {
+    width: 75%;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+}
+
+#top-mid-subdiv p {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+#bottom-mid-subdiv {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#containers-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#containers-div button {
+    width: 100%;
+    background-color: white;
+    border: 0;
+    border-bottom: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+    margin: 0;
+}
+
+#center-container {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #F9B1AE;
+}
+
+#overlayed-containers {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+}
+
+.overlayed-container {
+    width: 33%;
+}
+
+.container p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.container-subdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.container-subdiv span {
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.container-subdiv h3 {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.container-subdiv h1,
+.container-subdiv p,
+.bottom-container-subdiv img {
+    margin: 0;
+}
+
+.bottom-container-subdiv {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 12px;
+    margin: 0;
+}
+
+.bottom-container-subdiv img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+#services-div {
+    width: 100%;
+    height: 120vh;
+    background-color: #FCF1E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#service-title {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+}
+
+#services-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    margin: 0;
+    cursor: pointer;
+}
+
+.service h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+}
+
+.service img {
+    width: 40px;
+    margin: 20px;
+}
+
+#contact-div {
+    width: 100%;
+    height: 100vh;
+    background-color: #FCF1E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#fields {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#fields span {
+    margin: 0;
+}
+
+#top-fields {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    gap: 10%;
+}
+
+.field {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+.field input {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border: 0;
+    background-color: #EDE3DA;
+}
+
+#mid-fields {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#mid-fields textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 0;
+    background-color: #EDE3DA;
+}
+
+#bottom-fields {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom-fields p {
+    width: 60%;
+    margin: 0;
+}
+
+#bottom-fields button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.1em;
+    background-color: #df7c7c;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+#contact-message h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#contact-message p {
+    font-size: 1.1em;
+}
+
+footer {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FCF1E8;
+}
+
+@media (max-width: 1500px) {
+    #contact-message {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #top-div {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #top-div img {
+        width: 50%;
+    }
+
+    #top-subdiv {
+        width: 40%;
+        align-items: center;
+    }
+
+    #top-subdiv h1 {
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    #top-subdiv p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #second-div section {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #second-div-article h1 {
+        width: 100%;
+        font-size: 2.5em;
+    }
+
+    #second-div-article p {
+        font-size: 1.2em;
+    }
+
+    #top-mid-subdiv img {
+        width: 100px;
+    }
+
+    #contact-div {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #fields, #contact-message {
+        width: 70%;
+    }
+
+    #contact-message {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact-message p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+    #packages {
+        width: 100%;
+    }
+
+    .package-block {
+        width: 30%;
+    }
+
+    .package-block h2 {
+        font-size: 1.1em;
+    }
+
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    header .div-logo {
+        margin: 0;
+    }
+
+    header .div-sociais {
+        display: none;
+    }
+
+    #top-subdiv {
+        width: 80%;
+    }
+
+    #top-div img {
+        display: none;
+    }
+
+    #second-div section {
+        width: 80%;
+    }
+
+    #top-mid-subdiv h4 {
+        font-size: 1.2em;
+    }
+
+    #top-mid-subdiv p {
+        font-size: 1em;
+    }
+
+    #service-title {
+        font-size: 2em;
+    }
+
+    .service h1 {
+        font-size: 1.2em;
+    }
+
+    #top-fields {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    #bottom-fields {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #bottom-fields p {
+        width: 100%;
+    }
+
+    #bottom-fields button {
+        align-self: center;
+    }
+
+}
